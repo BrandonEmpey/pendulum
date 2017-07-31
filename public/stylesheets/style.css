@@ -1,0 +1,73 @@
+body
+{
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: block;
+}
+
+.container-fluid
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+a
+{
+  color: #00B7FF;
+}
+
+
+
+#home-nav
+{
+	background: #2980b9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 5px;
+	display: flex;
+	width: 100vw;
+	margin-top: 2%;
+}
+
+a
+{
+	color: white;
+}
+
+.main-container
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+.articleBanner
+{
+	width: 60vw;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 5px;
+	background: #2980b9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.topic
+{
+	border-radius: 5px;
+	width: 70vw;
+	height: 20vw;
+	border: 2px black solid;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+
+
