@@ -1,6 +1,8 @@
 
 
 
+
+
 body
 {
 	background: #ECE9E6;  /* fallback for old browsers */
@@ -18,7 +20,7 @@ body
 
 a
 {
-  color: #00B7FF;
+	color: #00B7FF;
 }
 
 #home-nav
@@ -29,20 +31,26 @@ a
 	border-radius: 5px;
 	display: flex;
 	width: 100vw;
-	height: 5vh;
+	height: 10vh;
 	margin-top: 2%;
 }
 
-a
+#home-nav a
 {
 	color: white;
+	display: inline-flex;
+	justify-content: flex-end;
+	width: 10%;
+}
+
+#home-nav a:first-child{
+	display: inline-flex;
+	justify-content: flex-start;
 }
 
 .main-container
 {
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -57,10 +65,15 @@ a
 	flex-wrap: wrap;
 }
 
-.row{
+.row
+{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
 }
+
 
 
 

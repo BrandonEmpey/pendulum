@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const expressLayouts     = require('express-ejs-layouts');
 const index = require('./routes/index');
-const login = require('/routes/login');
+const login = require('./routes/login');
 
 const app = express();
 
