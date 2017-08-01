@@ -5,10 +5,10 @@
 
 body
 {
-	background: #ECE9E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	display: block;
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .container-fluid
@@ -25,14 +25,12 @@ a
 
 #home-nav
 {
-	background: #2980b9;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 5px;
 	display: flex;
 	width: 100vw;
 	height: 10vh;
-	margin-top: 2%;
+	margin-top: 2vw;
 }
 
 #home-nav a
@@ -48,13 +46,18 @@ a
 	justify-content: flex-start;
 }
 
+
+#topNav{
+	display: none;
+}
+
 .main-container
 {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.topic
+.topicArticle
 {
 	border-radius: 5px;
 	width: 20vw;
@@ -87,3 +90,48 @@ a
 	width: 80vw;
 }
 
+.navbar{
+	display: flex;
+	justify-content: center;
+}
+
+#home-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -4vw;
+}
+
+.pendulumTitle{
+	display: flex;
+	justify-content: center;
+	width: 35vw;
+	height:6vh;
+	margin-left: 0;
+}
+
+.heading{
+	width: 80vw;
+	height: 8vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#globalism{
+	width:70vw;
+	height:14vh;
+}
+
+#privacy{
+	width:75vw;
+	height:18vh;
+}
+
+.headingWrapper{
+	width:70vw;
+	height: 14vh;
+	display: flex;
+	justify-content: center;
+	margin-left: 10vw;
+	margin-bottom: 5vw;
+}

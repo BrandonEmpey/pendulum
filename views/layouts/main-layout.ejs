@@ -6,7 +6,7 @@
     <link href=/stylesheets/ihover.css rel="stylesheet">
     <link rel="stylesheet" href=/stylesheets/style.css>
     <link rel="stylesheet" media="(max-width: 400px)" href=/stylesheets/iphoneStyle.css>
-    <link rel="stylesheet" media="(max-width: 768px)" href=/stylesheets/iphoneStyle.css>
+    <link rel="stylesheet" media="(max-width: 1024)" href=/stylesheets/ipadStyle.css>
 
     <script src=http://code.jquery.com/jquery-3.2.1.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -25,7 +25,8 @@
 
         <div class="collapse navbar-collapse" id="home-nav">
             <ul class="nav navbar-nav">
-                <li><a href="#">Start a Project</a></li>
+
+                <li><a href="#" id="titleLink"><img src="/images/Pendulum.png" class="pendulumTitle"> </a></li>
                 <li class="nav-logo">
                     <a href="/" class="nav-logo-link">
                         <img class="nav-logo-image" src="" alt="">
@@ -40,8 +41,16 @@
                 </li>
                 <li><a href="/login">Login</a></li>
                 <li><a href="/signup">Signup</a></li>
-                <li><a href="/profile">Profile</a></li>
             </ul>
+
+        </div>
+        <div id="topNav">
+        <ul class="nav navbar-nav .customNav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
         </div>
     </div>
 </nav>
