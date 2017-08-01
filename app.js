@@ -14,9 +14,7 @@ const User = require('./models/user');
 
 var app = express();
 
-
 mongoose.connect('mongodb://localhost/pendulum');
-
 
 
 // view engine setup

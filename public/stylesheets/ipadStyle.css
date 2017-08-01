@@ -12,19 +12,19 @@ body
 .container-fluid
 {
 	display: flex;
+	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
 
 a
 {
-  color: #00B7FF;
+	color: #00B7FF;
 }
 
 #home-nav
 {
 	background: #2980b9;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 5px;
 	display: flex;
@@ -46,10 +46,18 @@ a
 	flex-wrap: wrap;
 }
 
+.row{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	width: 100vw;
+}
+
 .topic
 {
 	border-radius: 5px;
-	height: 20vw;
+	padding: 10px;
+	height: 5vh;
 	border: 2px black solid;
 	display: flex;
 	justify-content: space-around;
@@ -57,32 +65,6 @@ a
 	flex-wrap: wrap;
 }
 
-.row{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin-bottom: 4vh;
-}
 
 
 
-.wrapper{
-	width:30vw;
-	margin-top:15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.heading{
-
-	text-decoration: underline;
-	color: #2980b9;
-	width: 33vw;
-	margin-left:33vw;
-
-}
-
-meter{
-	width: 200px;
-}
