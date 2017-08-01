@@ -10,13 +10,47 @@ const bcrypt = require("bcrypt");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const ensureLogin = require("connect-ensure-login");
+const app = express();
 const flash = require("connect-flash");
 const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/pendulum");
 
 //app.use after a router is created
+const index = require("./routes/index");
+//const login = require('./routes/login');
+
+<<<<<<< HEAD
+const index = require('./routes/index');
+const login = require('./routes/login');
+const User = require('./models/user');
+<<<<<<< HEAD
+=======
 
 var app = express();
+
+mongoose.connect('mongodb://localhost/pendulum');
+>>>>>>> 81a779bdf707ed97acd0ace260d1b3d65a930ca4
+
+
+mongoose.connect('mongodb://localhost/pendulum');
+=======
+//Controllers
+const authRoutes = require("./routes/authRoutes");
+const user = require("./models/user");
+
+//configuring the middleware
+app.use(
+  session({
+    secret: "pendulum",
+    resave: true,
+    saveUninitialized: true
+  })
+);
+>>>>>>> 8cffa78cda85546130f81dd53bc2b19f28cbd0da
+
+// initialize a session
+app.use(passport.initialize());
+app.use(passport.session());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -32,13 +66,10 @@ app.use(cookieParser());
 app.use(express.static("public"));
 app.use(express.static("images"));
 
-app.use(
-  session({
-    secret: "pendulum",
-    resave: true,
-    saveUninitialized: true
-  })
-);
+app.use("/", index);
+app.use("/", authRoutes);
+//app.use("/", passportRouter);
+app.use("/", user);
 
 passport.serializeUser((user, cb) => {
   cb(null, user._id);
@@ -77,16 +108,6 @@ passport.use(
   )
 );
 
-// initialize a session
-app.use(passport.initialize());
-app.use(passport.session());
-
-const index = require("./routes/index");
-const authRoutes = require("./routes/authRoutes");
-
-app.use("/", index);
-app.use("/", authRoutes);
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   const err = new Error("Not Found");
@@ -104,5 +125,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
+
 
 module.exports = app;
