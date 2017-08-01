@@ -11,8 +11,14 @@ const mongoose = require('mongoose');
 const index = require('./routes/index');
 const login = require('./routes/login');
 const User = require('./models/user');
+<<<<<<< HEAD
+=======
 
-const app = express();
+var app = express();
+
+mongoose.connect('mongodb://localhost/pendulum');
+>>>>>>> 81a779bdf707ed97acd0ace260d1b3d65a930ca4
+
 
 mongoose.connect('mongodb://localhost/pendulum');
 
