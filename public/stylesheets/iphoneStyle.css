@@ -57,7 +57,7 @@ a
 .topic
 {
 	border-radius: 5px;
-	height: 20vw;
+	width: 20vw;
 	border: 2px black solid;
 	display: flex;
 	justify-content: space-around;
@@ -75,5 +75,13 @@ a
 }
 
 
-
+/*.wrapper{
+	width: 60vw;
+	height:5vh;
+	margin-top:15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}*/
 

@@ -60,7 +60,29 @@ a
 .row{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 4vh;
 }
 
 
 
+.wrapper{
+	width:30vw;
+	margin-top:15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.heading{
+
+	text-decoration: underline;
+	color: #2980b9;
+	width: 33vw;
+	margin-left:33vw;
+
+}
+
+meter{
+	width: 200px;
+}
