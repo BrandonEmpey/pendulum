@@ -1,4 +1,4 @@
-<h1> Login </h1>
+<h1 id="#loginHeading"> Login </h1>
 
 <form action="/login" method="POST" id="form-container">
   <div>
@@ -13,7 +13,8 @@
   <% if (typeof(message) != "undefined") { %>
     <div class="error-message"><%= message %></div>
   <% } %>
+  <br>
   <div>
-    <input type="submit" value="Log In">
+    <input type="submit" value="Log In" class="button">
   </div>
 </form>

@@ -1,6 +1,5 @@
 
 
-
 body
 {
 	background: #232526;  /* fallback for old browsers */
@@ -15,6 +14,8 @@ body
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 a
@@ -35,12 +36,18 @@ a
 
 .customNav{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	margin-left: 25vw;
+	width: 50vw;
 }
 
 a
 {
 	color: white;
+}
+
+#topNav{
+	margin-top: -2vh;
 }
 
 .main-container
@@ -58,7 +65,7 @@ a
 	width: 100vw;
 }
 
-.topicArticle
+.featuredArticle
 {
 	border-radius: 5px;
 	padding: 10px;
@@ -78,6 +85,7 @@ a
 #home-nav{
 	display: flex;
 	justify-content: center;
+	align-items: baseline;
 }
 
 .pendulumTitle{
@@ -85,6 +93,7 @@ a
 	justify-content: center;
 	width: 30vw;
 	height:6vh;
+	margin-top: 0vw;
 }
 
 .heading{
@@ -96,12 +105,25 @@ a
 .headingWrapper{
 	width:20vw;
 	height: 8vh;
-	display: none;
+	display: flex;
 	justify-content: center;
-	margin-left: 20vw;
-}
 
+}
 
 #climateLink{
 	display: none
+}
+
+#climate{
+	margin-left: -12vw;
+}
+
+#globalism{
+	margin-left: 12vw;
+}
+
+#privacy{
+	margin-left: 8vw;
+	margin-top: 1vh;
+	width: 30vw;
 }
