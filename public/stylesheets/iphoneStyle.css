@@ -1,10 +1,7 @@
 
 body
 {
-	background: #232526;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	display: block;
+	background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
 }
 
 .container-fluid
@@ -12,40 +9,122 @@ body
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: column;
+	align-content: center;
 	padding-right: 0;
 	padding-left: 0;
 }
 
-#home-nav
-{
-	background: #2980b9;  /* fallback for old browsers */
-	background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	border-radius: 5px;
+.navbar{
+	background: linear-gradient(to right, #2c3e50, #2980b9);
+	width: 90vw;
 	display: flex;
-	width: 80vw;
-	height: 5vh;
-	margin-left: 16vw;
+	justify-content: center;
+	align-content: space-around;
+	margin-left: 5vw;
+	margin-top: 1vh;
+	border-radius: 5px;
 }
 
+.nav-item{
+	display: flex;
+	justify-content: space-around;
+	margin: .25vw;
+	margin-top: .45vw;
+}
 
+.navButton{
+	margin: .5vw;
+	margin-right: 3vw;
+	display: flex;
+	color: white;
+}
 
+#pendulumTitle{
+	display: flex;
+	justify-content: center;
+	width: 25vw;
+	height:6vh;
+	margin-top: 1vw;
+	margin-left: 32vw;
+	margin-right: 20vw;
+}
 a
 {
 	color: white;
 }
 
+.main-container{
+	display: flex;
+	flex-direction: column;
+	width: 57vw;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
 
-.wrapper{
-	display: none;
 }
 
-
-
-
+.wrapper
+{
+	display: none;
+}
 
 #privacy{
 	display: flex;
 	width: 40vw;
+}
+
+.formWrapper{
+	display: flex;
+	flex-direction: column;
+	margin-left: 66%;
+	width: 33%;
+}
+
+#username{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	width:100%;
+}
+
+#password{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	width:100%;
+}
+
+.signupWrapper{
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	width: 75vw;
+	margin-right: 16vw;
+}
+
+#signup-container{
+	width: 75vw;
+}
+
+.caButton {
+	background: linear-gradient(to right, #2c3e50, #2980b9);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	border-radius:8px;
+	cursor:pointer;
+	color:white;
+	font-family: Arial;
+	font-size:1em;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	display: flex;
+	align-content: space-around;
+	width: 60%;
 }
 
