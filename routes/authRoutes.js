@@ -4,10 +4,11 @@ const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
 const passport = require("passport");
-const ensureLogin = require("connect-ensure-login");
+const { ensureLoggedIn, ensureLoggedOut } = require("connect-ensure-login");
+
 const flash = require("connect-flash");
 
-authRoutes.get("/signup", (req, res, next) => {
+authRoutes.get("/signup", (req, res) => {
   res.render("auth/signup");
 });
 
@@ -30,6 +31,15 @@ authRoutes.post("/signup", (req, res, next) => {
     });
     return;
   }
+
+  authRoutes.post(
+    "/signup",
+    ensureLoggedOut(),
+    passport.authenticate("local-signup", {
+      successRedirect: "/",
+      failureRedirect: "/signup"
+    })
+  );
 
   User.findOne({ username }, "username", (err, user) => {
     if (user !== null) {
@@ -63,56 +73,57 @@ authRoutes.post("/signup", (req, res, next) => {
   });
 });
 
-authRoutes.get("/login", (req, res, next) => {
+authRoutes.get("/login", (req, res) => {
   res.render("auth/login");
 });
 
-authRoutes.post("/login", (req, res, next) => {
-  var { username, password } = req.body;
-  res.render("auth/login");
-
-  if (username === "" || password === "") {
-    res.render("auth/login", {
-      errorMessage: "Indicate a username and a password to log in"
-    });
-    return;
-  }
-
-  User.findOne(
-    { username: username },
-    "_id username password following",
-    (err, user) => {
-      if (err || !user) {
-        res.render("auth/login", {
-          errorMessage: "The username doesn't exist"
-        });
-        return;
-      } else {
-        if (bcrypt.compareSync(password, user.password)) {
-          req.session.currentUser = user;
-          res.redirect("/index");
-          // logged in
-        } else {
-          res.render("auth/login", {
-            errorMessage: "Incorrect password"
-          });
-        }
-      }
-    }
-  );
-});
+// authRoutes.post("/login", (req, res, next) => {
+//   var { username, password } = req.body;
+//   // res.render("auth/login");
+//
+//   if (username === "" || password === "") {
+//     res.render("auth/login", {
+//       errorMessage: "Indicate a username and a password to log in"
+//     });
+//     return;
+//   }
+//
+//   User.findOne(
+//     { username: username },
+//     "_id username password following",
+//     (err, user) => {
+//       if (err || !user) {
+//         res.render("auth/login", {
+//           errorMessage: "The username doesn't exist"
+//         });
+//         return;
+//       } else {
+//         if (bcrypt.compareSync(password, user.password)) {
+//           req.session.currentUser = user;
+//           res.redirect("/");
+//           // logged in
+//         } else {
+//           res.render("auth/login", {
+//             errorMessage: "Incorrect password"
+//           });
+//         }
+//       }
+//     }
+//   );
+// });
 
 authRoutes.post(
   "/login",
-  passport.authenticate("local", {
+  passport.authenticate("local-login", {
     successRedirect: "/",
+
     failureRedirect: "/login",
     failureFlash: true,
     passReqToCallback: true
   })
 );
 
-authRoutes.get("/private-page", ensureLogin.ensureLoggedIn(), (req, res) => {
+authRoutes.get("/private-page", ensureLoggedIn(), (req, res) => {
   res.render("private", { user: req.user });
 });
 
