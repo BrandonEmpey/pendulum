@@ -138,6 +138,26 @@ p{
 	color: white;
 }
 
+.topicHeading{
+	font-family: "Serif";
+	color: #3d768a;
+	text-shadow: 1px 1px #2c3e50;
+	display: flex;
+	align-content: space-around;
+	width:100%;
+	justify-content: space-around;
+}
+
+.topicHeading h2:nth-child(1){
+	margin-left: -3vw;
+}
+
+.topicHeading h2:nth-child(2){
+	margin-left:  -10vw;
+}
+
+
+
 .formWrapper{
 	display: flex;
 	flex-direction: column;
