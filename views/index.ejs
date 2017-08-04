@@ -1,6 +1,3 @@
-
-<%= user %>
-
 <div class="topicHeading">
     <h2 id="climate">Climate Change</h2>
     <h2 id="globalism">Globalism</h2>
@@ -9,26 +6,36 @@
 
 <br> <br>
 
-
+<div id="topBoxes">
+<input type="number" min="0" max="100" id="climate1">
+<input type="number" min="0" max="100" id="globalism1">
+<input type="number" min="0" max="100" id="privacy1">
+</div>
 
 <div class="row">
 
-  <% for (var i = 0; i < articles.length; i++) { %>
+    <% for (var i = 0; i < articles.length; i++) { %>
     <div class="wrapper">
-      <div class="ih-item square colored effect4 featuredArticle">
-        <a href="<%= articles[i].link %>" target="_blank">
-          <div class="img">
-            <img src="<%= articles[i].image %>" alt="img">
-          </div> 
-          <div class="mask1"></div>
-          <div class="mask2"></div>
-          <div class="info">
-            <h3><%= articles[i].title %></h3>
-            <p><%= articles[i].originalSource %></p>
-          </div>
-          </a>
+        <div class="ih-item square colored effect4 featuredArticle">
+            <a href="<%= articles[i].link %>" target="_blank">
+                <div class="img">
+                    <img src="<%= articles[i].image %>" alt="img">
+                </div>
+                <div class="mask1"></div>
+                <div class="mask2"></div>
+                <div class="info">
+                    <h3><%= articles[i].title %></h3>
+                    <p> Score: <%= articles[i].grade %> - <%= articles[i].originalSource %></p>
+                </div>
+            </a>
         </div>
     </div>
-  <% } %>
+    <% } %>
 
+</div>
+
+<div id="bottomBoxes">
+<input type="number" min="0" max="100" id="climate1">
+<input type="number" min="0" max="100" id="globalism1">
+<input type="number" min="0" max="100" id="privacy1">
 </div>

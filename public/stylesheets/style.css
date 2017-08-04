@@ -73,6 +73,7 @@ a{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin-bottom: 4vh;
+	width: 100%;
 }
 
 .wrapper{
@@ -133,13 +134,6 @@ form{
 	margin-left: 30vw;
 }
 
-/*.button{
-	border-radius: 5px;
-	margin-left: 33%;
-	margin-bottom: 3%;
-	width: 33%;
-}*/
-
 .caButton {
 	background: linear-gradient(to right, #2c3e50, #2980b9);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
@@ -172,6 +166,21 @@ input{
 
 h4{
 	color: white;
+}
+
+#climate1Wrapper{
+	width:20%;
+	display: inline-flex;
+	align-content: center;
+	justify-content: space-around;
+	border: 1px black solid;
+	margin-top: -3vh;
+	margin-bottom: 6vh;
+	margin-left: -7vw;
+}
+
+input h5{
+	margin-right: -35%;
 }
 
 p{
@@ -257,7 +266,6 @@ p{
 	margin-right: 16vw;
 }
 
-
 #signup-container{
 	width: 33vw;
 }
@@ -266,19 +274,24 @@ p{
 	height: 5%;
 }
 
-.caButton {
-	background: linear-gradient(to right, #2c3e50, #2980b9);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
-	border-radius:8px;
-	cursor:pointer;
-	color:white;
-	font-family: Arial;
-	font-size:1em;
-	font-weight:bold;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
+input[type=number]{
+	border: 1px #2980b9 solid;
+	Display: inline-flex;
+	justify-content: space-around;
+}
+
+#topBoxes{
 	display: flex;
 	justify-content: space-around;
-	margin-left: 25%;
-	width: 50%;
+	width: 100%;
+	margin-top: 2vh;
+	margin-bottom: -1vh;
+}
+
+#bottomBoxes{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: -3vh;
+	margin-bottom: 1vh;
 }
