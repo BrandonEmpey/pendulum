@@ -15,6 +15,7 @@ const articles = [
 		link:
 			"https://www.wsj.com/articles/climate-change-isnt-the-end-of-the-world-1501446277",
 		image: "images/climate.png"
+
 		//bias: right, business
 	},
 

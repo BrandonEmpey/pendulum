@@ -15,7 +15,8 @@ const flash = require("connect-flash");
 const mongoose = require("mongoose");
 const MongoStore = require("connect-mongo")(session);
 const { ensureLoggedIn, ensureLoggedOut } = require("connect-ensure-login");
-mongoose.connect("mongodb://localhost/pendulum");
+require("dotenv").config();
+mongoose.connect(process.env.MONGODB_URI);
 
 //app.use after a router is created
 
