@@ -1,31 +1,33 @@
-<h2>Signup</h2>
-
-<form action="/signup" method="POST" id="form-container">
+<div class="signupWrapper">
+<form action="/signup" method="POST" id="signup-container">
   <label for="username">Username</label>
+
   <input type="text" name="username" placeholder="Your username">
   <% if (typeof(message) != "undefined") { %>
     <div class="error-message"><%= message %></div>
     <% } %>
+    <br>
     <label for="password">Password</label>
     <input type="password" name="password" placeholder="Your password">
     
-    <br><br>
+    <br>
     <label for="First Name">First Name</label>
     <input type="firstName" name="firstName" placeholder="First name">
-    <br><br>
+    <br>
     <label for="Last Name">Last Name</label>
     <input type="lastName" name="lastName" placeholder= "Last name">
-    <br><br>
-    <label for "Email">Email</label>
+    <br>
+    <label for="Email">Email</label>
     <input type="email" name="email" placeholder="Your email">
-    <br><br>
-    <button>Create account</button>
-    <br><br>
+    <br>
+    <button class="caButton iphone">Create account</button>
+    <br>
     <% if (typeof(errorMessage) != "undefined") { %>
       <div class="error-message"><%= errorMessage %></div>
       <% } %>
-      <br><br>
+      <br>
       <p class="account-message">
         Do you already have an account? <a href="/login">Login</a>
       </p>
     </form>
+</div>
