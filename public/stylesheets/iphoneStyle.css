@@ -57,11 +57,10 @@ a
 .main-container{
 	display: flex;
 	flex-direction: column;
-	width: 57vw;
+	width: 100%;
 	justify-content: center;
 	align-content: center;
 	flex-wrap: wrap;
-
 }
 
 .wrapper
@@ -73,6 +72,36 @@ a
 	display: flex;
 	width: 40vw;
 }
+
+
+.topicHeading{
+	font-family: "serif";
+	color: #3d768a;
+	text-shadow: 1px 1px #2c3e50;
+	display: flex;
+	align-content: space-around;
+	width:100%;
+
+}
+
+.topicHeading h2{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.topicHeading h2:nth-child(1){
+	margin-left: 5vw;
+}
+
+.topicHeading h2:nth-child(2){
+
+}
+
+.topicHeading h2:nth-child(3){
+	margin-right: 5vw;
+}
+
 
 .formWrapper{
 	display: flex;
