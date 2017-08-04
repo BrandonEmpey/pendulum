@@ -12,7 +12,8 @@ const articles = [
     author: "David R. Henderson and  John H. Cochrane",
     originalSource: "Wall Street Journal",
     link:
-      "https://www.wsj.com/articles/climate-change-isnt-the-end-of-the-world-1501446277"
+      "https://www.wsj.com/articles/climate-change-isnt-the-end-of-the-world-1501446277",
+    image: "images/climate.png"
     //bias: right, business
   },
 
@@ -22,7 +23,8 @@ const articles = [
       "A warming Earth disturbs weather, people, animals and much more",
     author: "Unknown",
     originalSource: "Environmental Defense Fund",
-    link: "https://www.edf.org/climate/climate-changes-effects-plunder-planet"
+    link: "https://www.edf.org/climate/climate-changes-effects-plunder-planet",
+    image: "images/Globalism02.jpg"
   },
 
   {
@@ -31,7 +33,8 @@ const articles = [
     author: "Wharton Partners",
     originalSource: "University of Pennsylvania",
     link:
-      "http://knowledge.wharton.upenn.edu/article/a-compelling-case-for-globalization/"
+      "http://knowledge.wharton.upenn.edu/article/a-compelling-case-for-globalization/",
+    image: "images/Privacy01.jpg"
   },
 
   {
@@ -40,7 +43,8 @@ const articles = [
     author: "Gail Tverberg",
     originalSource: "Our Finite World",
     link:
-      "https://ourfiniteworld.com/2013/02/22/twelve-reasons-why-globalization-is-a-huge-problem/"
+      "https://ourfiniteworld.com/2013/02/22/twelve-reasons-why-globalization-is-a-huge-problem/",
+    image: "images/climate04.jpg"
   },
 
   {
@@ -49,7 +53,8 @@ const articles = [
     author: "Bianna Golodryga",
     originalSource: "Huffington Post",
     link:
-      "http://www.huffingtonpost.com/bianna-golodryga/fbi-vs-apple-when-securit_b_9577620.html"
+      "http://www.huffingtonpost.com/bianna-golodryga/fbi-vs-apple-when-securit_b_9577620.html",
+    image: "images/Globalism03.jpg"
   },
 
   {
@@ -58,7 +63,8 @@ const articles = [
     author: "Ron Iphofen",
     originalSource: "Times Higher Education",
     link:
-      "https://www.timeshighereducation.com/features/safety-is-more-important-than-privacy"
+      "https://www.timeshighereducation.com/features/safety-is-more-important-than-privacy",
+    image: "images/Privacy03.jpg"
   }
 ];
 

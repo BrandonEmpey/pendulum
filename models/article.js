@@ -6,7 +6,8 @@ const articleSchema = new Schema({
   description: String,
   author: String,
   originalSource: String,
-  link: String
+  link: String,
+  image: String
   // gradeIds: [{ type: Schema.Types.ObjectId, ref: 'Grade'}],
   // commentIds: [{ type: Schema.Types.ObjectId, ref: 'Comment'}]
 });

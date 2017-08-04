@@ -9,7 +9,8 @@ router.get("/", (req, res, next) => {
       return next(err);
     }
     res.render("index", {
-      articles: articles
+      articles: articles,
+      user: req.user
     });
   });
 });

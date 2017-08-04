@@ -116,7 +116,6 @@ authRoutes.post(
   "/login",
   passport.authenticate("local-login", {
     successRedirect: "/",
-
     failureRedirect: "/login",
     failureFlash: true,
     passReqToCallback: true
@@ -124,7 +123,7 @@ authRoutes.post(
 );
 
 authRoutes.get("/private-page", ensureLoggedIn(), (req, res) => {
-  res.render("private", { user: req.user });
+  res.render("auth/login", { user: req.user });
 });
 
 authRoutes.get("/logout", (req, res) => {
