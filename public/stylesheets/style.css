@@ -76,7 +76,7 @@ a{
 }
 
 .wrapper{
-	width:30vw;
+	width:33%;
 	margin-top:15px;
 	display: flex;
 	justify-content: center;
@@ -203,21 +203,20 @@ p{
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-left: 4vw;
 }
 
 #privacy{
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-right: 4.5vw;
+
 }
 
 #globalism{
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-left: 0vw;
+
 }
 
 
